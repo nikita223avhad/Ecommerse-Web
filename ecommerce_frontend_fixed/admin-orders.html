@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Orders - Nexora</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <header class="topbar admin-top"><a class="brand" href="admin-dashboard.html"><span>N</span>Nexora Admin</a><nav><a href="admin-dashboard.html">Dashboard</a><a href="admin-products.html">Products</a><a class="active" href="admin-orders.html">Orders</a></nav></header>
+    <main class="admin-layout">
+      <div class="page-head"><div><p class="eyebrow">Orders</p><h1>Manage orders</h1></div></div>
+      <div class="table-card"><table><thead><tr><th>Order</th><th>User</th><th>Total</th><th>Status</th><th>Product</th></tr></thead><tbody id="adminOrdersTable"></tbody></table></div>
+    </main>
+    <script type="module" src="js/pages/admin-orders.js"></script>
+  </body>
+</html>

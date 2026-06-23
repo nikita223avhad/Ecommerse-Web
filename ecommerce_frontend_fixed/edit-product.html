@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product - Nexora</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <header class="topbar admin-top"><a class="brand" href="admin-dashboard.html"><span>N</span>Nexora Admin</a><nav><a href="admin-products.html">Products</a><a href="admin-orders.html">Orders</a></nav></header>
+    <main class="admin-layout form-card">
+      <p class="eyebrow">Inventory</p>
+      <h1>Edit product</h1>
+      <form id="editProductForm" class="form-grid">
+        <label>Name<input name="name" required /></label>
+        <label>Category<input name="category" required /></label>
+        <label>Price<input name="price" type="number" min="0" step="0.01" required /></label>
+        <label>Stock<input name="stock" type="number" min="0" required /></label>
+        <label>Image URL<input name="image_url" placeholder="/static/products/product.jpg" /></label>
+        <label>Upload Image<input name="image" type="file" accept="image/*" /></label>
+        <label class="wide">Description<textarea name="description" required></textarea></label>
+        <button class="btn primary wide">Update Product</button>
+      </form>
+    </main>
+    <script type="module" src="js/pages/edit-product.js"></script>
+  </body>
+</html>

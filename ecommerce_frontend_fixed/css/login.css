@@ -1,0 +1,25 @@
+.auth-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: min(100%, 460px);
+  padding: 30px;
+}
+
+.auth-card h1 {
+  font-size: clamp(2rem, 8vw, 3.2rem);
+}
+
+.auth-card p {
+  color: var(--muted);
+  text-align: center;
+}
+
+.auth-card a {
+  color: var(--primary);
+  font-weight: 800;
+}

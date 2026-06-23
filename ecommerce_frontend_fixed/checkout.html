@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Nexora</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span>N</span>Nexora</a>
+      <nav><a href="products.html">Products</a><a href="cart.html">Cart</a><a href="orders.html">Orders</a></nav>
+    </header>
+    <main class="split-layout">
+      <section class="form-card">
+        <p class="eyebrow">Checkout</p>
+        <h1>Delivery and payment</h1>
+        <form id="checkoutForm" class="form-grid">
+          <label>Full name<input name="full_name" required /></label>
+          <label>Phone<input name="phone" required /></label>
+          <label class="wide">Address<input name="address" required /></label>
+          <label>Payment method<select name="payment_method"><option>Credit Card</option><option>UPI</option><option>Cash on Delivery</option></select></label>
+          <label>Card number<input name="card_number" /></label>
+          <button class="btn primary wide">Place Order</button>
+        </form>
+      </section>
+      <aside id="checkoutSummary" class="summary-card"></aside>
+    </main>
+    <div id="chatbotWidget"></div>
+    <script type="module" src="js/pages/checkout.js"></script>
+    <script type="module" src="js/pages/chatbot.js"></script>
+  </body>
+</html>

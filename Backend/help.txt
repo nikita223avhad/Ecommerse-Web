@@ -1,0 +1,120 @@
+ecommerce_backend/
+│
+├── app/
+│   │
+│   ├── main.py
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── database.py
+│   │
+│   ├── models/
+│   │   ├── user_model.py
+│   │   ├── product_model.py
+│   │   ├── category_model.py
+│   │   ├── cart_model.py
+│   │   ├── order_model.py
+│   │   └── __init__.py
+│   │
+│   ├── schemas/
+│   │   ├── user_schema.py
+│   │   ├── product_schema.py
+│   │   ├── category_schema.py
+│   │   ├── cart_schema.py
+│   │   └── order_schema.py
+│   │
+│   ├── routers/
+│   │   ├── auth_router.py
+│   │   ├── user_router.py
+│   │   ├── product_router.py
+│   │   ├── category_router.py
+│   │   ├── cart_router.py
+│   │   └── order_router.py
+│   │
+│   ├── services/
+│   │   ├── auth_service.py
+│   │   ├── product_service.py
+│   │   ├── cart_service.py
+│   │   └── order_service.py
+│   │
+│   ├── dependencies/
+│   │   └── deps.py
+│   │
+│   └── utils/
+│       ├── hash.py
+│       ├── jwt_handler.py
+│       └── helpers.py
+│
+├── tests/
+│   ├── test_auth.py
+│   ├── test_product.py
+│   └── test_order.py
+│
+├── .env
+├── requirements.txt
+├── README.md
+└── run.py
+
+
+
+
+ecommerce.db
+│
+├── users
+├── products
+├── cart
+├── orders
+└── payments
+
+# user table
+
+| Column   | Type    | Description     |
+| -------- | ------- | --------------- |
+| id       | Integer | Primary Key     |
+| username | String  | User name       |
+| email    | String  | Unique email    |
+| password | String  | Hashed password |
+
+# Product table
+
+| Column      | Type    |
+| ----------- | ------- |
+| id          | Integer |
+| name        | String  |
+| description | String  |
+| price       | Float   |
+| category    | String  |
+| stock       | Integer |
+| image       | String  |
+
+# cart table
+
+| Column     | Type        |
+| ---------- | ----------- |
+| id         | Integer     |
+| user_id    | Foreign Key |
+| product_id | Foreign Key |
+| quantity   | Integer     |
+
+#Orders Table
+
+| Column      | Type        |
+| ----------- | ----------- |
+| id          | Integer     |
+| user_id     | Foreign Key |
+| total_price | Float       |
+| status      | String      |
+| product_id  | Foreign Key |
+
+Payment table 
+
+| Column         | Type        |
+| -------------- | ----------- |
+| id             | Integer     |
+| order_id       | Foreign Key |
+| amount         | Float       |
+| payment_method | String      |
+| payment_status | String      |
+
+

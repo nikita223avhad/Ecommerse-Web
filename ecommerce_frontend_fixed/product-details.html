@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - Nexora</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/product-details.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span>N</span>Nexora</a>
+      <form class="search-bar" data-search-form><input name="q" placeholder="Search products" /><button>Search</button></form>
+      <nav><a href="products.html">Products</a><a href="cart.html">Cart</a><a href="orders.html">Orders</a><a href="login.html" data-auth-link>Login</a></nav>
+    </header>
+    <main id="productDetails" class="details-layout"></main>
+    <section class="section">
+      <div class="section-head"><div><p class="eyebrow">AI recommendations</p><h2>You may also like</h2></div></div>
+      <div id="recommendations" class="product-grid"></div>
+    </section>
+    <div id="chatbotWidget"></div>
+    <script type="module" src="js/pages/product-details.js"></script>
+    <script type="module" src="js/pages/chatbot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot - Nexora</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header class="topbar"><a class="brand" href="index.html"><span>N</span>Nexora</a><nav><a href="products.html">Products</a><a href="orders.html">Orders</a><a href="cart.html">Cart</a></nav></header>
+    <main class="chatbot-page">
+      <section class="chatbot-large">
+        <p class="eyebrow">AI assistant</p>
+        <h1>Ask about recommendations, tracking, or placing an order.</h1>
+        <div id="fullChatMessages" class="chat-messages large"></div>
+        <form id="fullChatForm" class="chat-form"><input name="message" placeholder="Recommend products under $200" /><button class="btn primary">Send</button></form>
+      </section>
+    </main>
+    <script type="module" src="js/pages/chatbot.js"></script>
+  </body>
+</html>

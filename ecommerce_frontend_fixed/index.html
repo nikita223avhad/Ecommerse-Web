@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora AI Commerce</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span>N</span>Nexora</a>
+      <form class="search-bar" data-search-form>
+        <input name="q" placeholder="Search products, brands, categories" />
+        <button type="submit">Search</button>
+      </form>
+      <nav>
+        <a href="products.html">Products</a>
+        <a href="orders.html">Orders</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+        <a class="nav-button" href="login.html" data-auth-link>Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AI powered ecommerce</p>
+          <h1>Shop smarter with recommendations, tracking, and fast checkout.</h1>
+          <p class="hero-text">A modern production-style ecommerce Store.</p>
+          <div class="actions">
+            <a class="btn primary" href="products.html">Browse Products</a>
+            <a class="btn ghost" href="chatbot.html">Ask AI Assistant</a>
+          </div>
+        </div>
+        <aside class="ai-preview">
+          <span class="pill">Nexora AI</span>
+          <h2>Recommended today</h2>
+          <div id="featuredProducts" class="mini-list"></div>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Categories</p>
+            <h2>Shop by department</h2>
+          </div>
+          <a href="products.html">View all</a>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Featured</p>
+            <h2>Popular products</h2>
+          </div>
+          <a href="products.html">See more</a>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+    </main>
+
+    <div id="chatbotWidget"></div>
+    <script type="module" src="js/pages/home.js"></script>
+    <script type="module" src="js/pages/chatbot.js"></script>
+  </body>
+</html>

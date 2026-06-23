@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Nexora</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"><span>N</span>Nexora</a>
+      <form class="search-bar" data-search-form><input name="q" placeholder="Search products" /><button>Search</button></form>
+      <nav><a href="products.html">Products</a><a class="active" href="cart.html">Cart</a><a href="orders.html">Orders</a><a href="login.html" data-auth-link>Login</a></nav>
+    </header>
+    <main class="split-layout">
+      <section>
+        <p class="eyebrow">Cart</p>
+        <h1>Your cart</h1>
+        <div id="cartList"></div>
+      </section>
+      <aside id="cartSummary" class="summary-card"></aside>
+    </main>
+    <div id="chatbotWidget"></div>
+    <script type="module" src="js/pages/cart.js"></script>
+    <script type="module" src="js/pages/chatbot.js"></script>
+  </body>
+</html>
